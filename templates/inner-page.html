@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Pdf Marge Now</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="{{ url_for('static',filename='img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static',filename='img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="{{ url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <img src="{{ url_for('static',filename='img/logo.png') }}" alt="">
+        <span>Make Pdf </span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+
+<!--          <li><a class="getstarted scrollto" href="#inner-page">Get Started</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">
+            All the pdf merged successfully
+          </h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">..............................</h2>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="/" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <i class="bi bi-arrow-left" style="padding-right:10px"></i>
+                <span>Back to Home</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="{{ url_for('static',filename='img/footer-bg.png') }}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+  <footer id="footer" class="footer">
+     <h1 style="text-align:center; color: #333333;padding:10px;font-weight:bold;">Merged Pdf File</h1>
+    <button onclick="reloadFrame()">Refresh</button>
+ <iframe id="myframe" src="https://drive.google.com/embeddedfolderview?id=1PzVZS5yOyVo0GWUIFlSTakPl5c8Wej5T#grid" allow-scripts style="width:100%; height:600px; border:1px; font-size:30px; color:red;"></iframe>
+  </footer><!-- End Footer -->
+<script>
+  function reloadFrame() {
+    var frame = document.getElementById("myframe");
+    frame.src = frame.src;
+  }
+</script>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="{{ url_for('static',filename='assets/js/main.js') }}"></script>
+  <script src="{{ url_for('static',filename='assets/js/filter.js') }}"></script>
+</body>
+</html>
